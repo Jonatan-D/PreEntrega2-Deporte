@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../estilos/styles.css" />
+    <title>Contacto</title>
+</head>
+<body>
+    
+
+    <section class="contact">
+        
+
+           
+
+
+
+        <hr class="contact__separador">
+
+        <ul class="contact__breadcrumbs">
+            <li class="breadcrumbs__item">
+                <a href="../index.html" class="breadcrumbs__link">Inicio</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a href="./contacto.html" class="breadcrumbs__link breadcrumbs__link--activo">Contacto</a>
+            </li>            
+          </ul>
+
+        <div class="contact__container">
+            <div class="contact__container--titulo_texto">
+                <div>
+                    <p>Contacto</p>
+                </div>
+            </div>    
+            <div class="contact__container--contenedor-formu">
+                <div class="contact__container--titulo_texto">
+                    <div>
+                        <p>Mensaje</p>
+                    </div>
+                </div>
+                <form class="formulario" method="POST" action="">    
+                    <input class="campos" id="idnombre" type="text" placeholder="Nombre*" minlength="4" maxlength="60" name="nombre" required >
+                    <hr class="separador_2">
+                    <input class="campos" id="idemail" type="email" name="email" placeholder="Email*" minlength="4" maxlength="40" required >
+                    <hr class="separador_2">
+                    <textarea class="area_texto" id="idconsulta" name="consulta" placeholder="Mensaje*" rows="8" cols="50" minlength="50"> </textarea>
+                    <hr class="separador_2">
+                    <input class="enviar" id="idenviar" type="button" value="Enviar mensaje">
+                    </form>                    
+        </div>
+        
+        <div class="contact__logo">
+            <img src="../img/logo.png" alt="">
+        </div>
+
+</body>
+</html>
