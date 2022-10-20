@@ -3,133 +3,48 @@
 }
 body {
   font-family: oxygen;
-  max-width: 73%;
-  margin: auto;
   background-color: #1a1919;
   background-image: url("data:image/svg+xml,%3Csvg width='32' height='26' viewBox='0 0 32 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 0v3.994C14 7.864 10.858 11 7 11c-3.866 0-7-3.138-7-7.006V0h2v4.005C2 6.765 4.24 9 7 9c2.756 0 5-2.236 5-4.995V0h2zm0 26v-5.994C14 16.138 10.866 13 7 13c-3.858 0-7 3.137-7 7.006V26h2v-6.005C2 17.235 4.244 15 7 15c2.76 0 5 2.236 5 4.995V26h2zm2-18.994C16 3.136 19.142 0 23 0c3.866 0 7 3.138 7 7.006v9.988C30 20.864 26.858 24 23 24c-3.866 0-7-3.138-7-7.006V7.006zm2-.01C18 4.235 20.244 2 23 2c2.76 0 5 2.236 5 4.995v10.01C28 19.765 25.756 22 23 22c-2.76 0-5-2.236-5-4.995V6.995z' fill='%23212124' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
+/* ############# Caja de logo y bienvenida ############*/
 
-header {
-  position: relative;
-  height: 45rem;
-}
-/* ############# Barra menu ############*/
-.nav {
-  display: block;
-  box-sizing: border-box;
-}
-
-.nav ul {
-  list-style: none;
-  padding: 0;
-  background-color: rgba(255, 255, 255, 0.1);
-  width: 100%;
-  max-width: 55%;
-  margin: auto;
-  border-radius: 15px;
-  transition: all 500ms ease-in-out;
-}
-.nav ul li {
-  display: inline-block;
-  text-align: center;
-  margin: 2rem;
-}
-.nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 2rem;
-  padding: 2.2rem;
-  display: block;
-}
-.nav ul li a:hover {
-  color: #06adf0;
-}
-.nav ul:hover {
-  box-shadow: 0 0.4rem 0.8rem #06adf0;
-}
-/*############ Logo #########*/
-
-.header__contLogo {
-  position: absolute;
-  top: 30%;
-  left: 20%;
-}
-/*########## section ######*/
-.section {
-  position: relative;
-}
-.section__bus img {
-  border-radius: 12px;
-  width: 99.7%;
-}
 .section__bienvenida {
-  position: absolute;
-  top: 2.6rem;
-  left: 30rem;
-  color: aliceblue;
-  font-weight: 0.9rem;
-  font-size: 2rem;
-  transition: all 500ms ease-in-out;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
 }
+
 .section__bienvenida:hover {
-  text-shadow: 0 0.4rem 0.8rem #06adf0;
+  box-shadow: 0 2px 30px #06adf0;
 }
+
 /*############ footer ##########*/
 .footer {
-  width: 100%;
   height: 20rem;
   background-color: rgba(255, 255, 255, 0.1);
-  margin: 3rem 0rem;
-  border-radius: 1.2rem;
-  position: relative;
 }
-.footer__copyright {
-  display: inline-block;
-  color: aliceblue;
-  font-size: 1.2rem;
-  left: 90%;
-  position: absolute;
-  left: 78%;
-  top: 45%;
-}
-
-.footer__redes {
-  display: inline-block;
-  font-size: 4rem;
-  position: absolute;
-  top: 25%;
-  left: 42%;
-}
-.footer__redes a {
-  color: aliceblue;
-  top: 35%;
-  margin: 0rem 3rem;
-}
-.footer__redes a:hover {
+.social-media:hover {
   color: #06adf0;
 }
 
 /*////// BREADCRUMBS//////*/
 
-.contact__breadcrumbs{
-  padding:1rem;
+.contact__breadcrumbs {
+  padding: 1rem;
   font-family: sans-serif;
 }
-.breadcrumbs__item{
-  display: inline-block;
-}
-.breadcrumbs__item:not(:last-of-type)::after{
-  content:'/';
+
+.breadcrumbs__item:not(:last-of-type)::after {
+  content: "/";
   margin: 0 0.5rem;
   color: #cccccc;
 }
-.breadcrumbs__link{
+.breadcrumbs__link {
   text-decoration: none;
   color: #cccccc;
   font-size: 1.5rem;
   font-weight: bold;
 }
-.breadcrumbs__link:hover{
+.breadcrumbs__link:hover {
   color: #06adf0;
 }
 
@@ -159,23 +74,17 @@ header {
   margin: 12px 0px;
 }
 
-
 /* logo semi transparente */
 
-.contact__logo{
-  
+.contact__logo {
   width: 9rem;
   height: 9rem;
-  position: absolute;
-  top: 10%;
-  left: 47%;
-  
 }
-.contact__logo img{
+.contact__logo img {
   opacity: 1;
   object-fit: cover;
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
 }
 
 input::placeholder {
@@ -189,44 +98,29 @@ textarea::placeholder {
 ::selection {
   text-shadow: 0 2px 12px #06adf0;
 }
-
-.contact {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-.contact__container {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+.contact__box {
+  /* padding: 0;
+  margin: 0;   */
   margin-bottom: 3rem;
 }
 
-.contact__container--contenedor-formu {
-  width: 70%;
+.contact__box--contenedor-formu {
   background-color: rgba(255, 255, 255, 0.24);
   border-radius: 8px;
   -webkit-transition: 0.5s linear;
   transition: 0.5s linear;
 }
 
-.contact__container--contenedor-formu:hover {
+.contact__box--contenedor-formu:hover {
   box-shadow: 0 2px 30px #06adf0;
 }
 
 .formulario {
-  width: 100%;
-
   margin: 30px 0;
   padding: 20px;
 }
 .campos {
   border-radius: 8px;
-
   background: none;
   color: #fff;
   padding-top: 20px;
@@ -242,10 +136,7 @@ textarea::placeholder {
 }
 
 .enviar {
-  margin-left: 45%;
-
   width: 120px;
-  display: inline-block;
   padding: 7px 0;
   border: 2px solid #06adf0;
   border-radius: 50px;
@@ -261,56 +152,43 @@ textarea::placeholder {
 }
 
 /*######## modelado de parrafo ########*/
-.contact__container--titulo_texto {
+.contact__box--titulo_texto {
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 60px;
   text-align: center;
   color: #fff;
   padding: 0;
-  
 }
-
 /*####### NOSOTROS  Y SERVICIOS#########*/
-.about, .servicios {
-  width: 80%;  
+.about {
   margin-top: 5rem;
-  padding: 6rem;
-  
 }
-.about__nosotros, .servicios__container{
-  
-  width: 90%;
+.about__nosotros,
+.servicios__container {
   height: auto;
- 
-  padding: 5rem;
-  margin-left: 14rem;
   box-sizing: border-box;
-  position: relative;
- 
 }
-.about__nosotros h1, .servicios__container h1{
-  display: inline-block;
-  padding-left: 15rem;
+.about__nosotros h1,
+.servicios__container h1 {
   font-family: oxygen;
-font-size: 4rem;
-color: #ffffff;
+  color: #ffffff;
 }
 
-.about__nosotros--contenido, .servicios__container--contenido {
-  width: 100%;
+.about__nosotros--contenido,
+.servicios__container--contenido {
   background-color: rgba(255, 255, 255, 0.24);
   border-radius: 8px;
   -webkit-transition: 0.5s linear;
   transition: 0.5s linear;
-  padding: 5rem;
+  padding: 0.5rem;
   box-sizing: border-box;
-  
 }
-.about__nosotros--contenido, .servicios__container--contenido{
+.about__nosotros--contenido,
+.servicios__container--contenido {
   font-family: Oxygen;
   font-weight: bold;
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .about__nosotros--contenido:hover {
   box-shadow: 0 2px 30px #06adf0;
