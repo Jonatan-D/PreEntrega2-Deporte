@@ -1,0 +1,21 @@
+/*////// BREADCRUMBS//////*/
+
+.contact__breadcrumbs {
+  padding: 1rem;
+  font-family: sans-serif;
+}
+
+.breadcrumbs__item:not(:last-of-type)::after {
+  content: "/";
+  margin: 0 0.5rem;
+  color: #cccccc;
+}
+.breadcrumbs__link {
+  text-decoration: none;
+  color: #cccccc;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.breadcrumbs__link:hover {
+  color: #06adf0;
+}
