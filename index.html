@@ -19,7 +19,7 @@
   </head>
   <body>
      <header class="header container "> 
-      <nav class="barra navbar navbar-expand-lg border-bottom py-4 navbar-dark bg-dark bg-opacity-75 rounded-3 p-2">
+      <nav class="barra navbar navbar-expand-lg  border-bottom border-info py-4 navbar-dark bg-dark bg-opacity-75 rounded-3 p-2">
         <div class="container-fluid">
           <a class="navbar-brand fs4 " href="#">
             <img src="./img/favicon.ico" alt="" width="35" height="35" class="d-inline-block align-text-top">
@@ -55,20 +55,173 @@
         <div class="contLogo ">
           <img src="./img/logo_norteno.png" alt="logo" class=" img-fluid" />
         </div>
-        <div class="section__bienvenida badge bg-dark bg-opacity-75 text-wrap p-5 rounded-3" >
+        <div class="section__bienvenida badge bg-dark bg-opacity-75 text-wrap p-5 mb-5 rounded-3" >
           <h1 class="fs-1">¡Bienvenidos a nuestro sitio web!</h1>
         </div>
       </div>
-    </section>      
+    </section>
+    
+    <!-- Carousel -->
+
+    <section class="container p-0">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/slide1.jpg" class="d-block w-100" alt="ELNorteno">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="fw-bold fs-1 text-decoration-underline text-info">HACE TU COMPRA ONLINE</h2>
+            <p class="fw-bold fs-3 text-black">Y ACCEDÉ A DESCUENTOS EXCLUSIVOS.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/slide2.jpg" class="d-block w-100" alt="...">
+          <!-- <div class="carousel-caption d-none d-md-block">
+            <h5>Etiqueta de la segunda diapositiva</h5>
+            <p>Algún contenido placeholder representativo para la segunda diapositiva.</p>
+          </div> -->
+        </div>
+        <div class="carousel-item">
+          <img src="./img/slide3.jpg" class="d-block w-100" alt="...">
+          <!-- <div class="carousel-caption d-none d-md-block">
+            <h5>Etiqueta de la tercera diapositiva</h5>
+            <p>Algún contenido placeholder representativo para la tercera diapositiva.</p>
+          </div> -->
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+    <hr class="contact__separador"> 
+  </section>
+
+
+<!--########## FORMULARIO COMPRA ONLINE ###########-->
+<section class="container bg-white rounded-3 p-2">
+  <h2 class="fs-1 text-center fw-bold mb-5">Comprá Online</h2>
+<form class="row g-4 needs-validation" novalidate>
+  <div class="col-md-3 ">
+    <label for="validationCustom01" class="form-label fs-3 fw-bold">Origen</label>
+    <select class="form-select was-validated " id="validationCustom01" required>
+      <option selected disabled value="">Seleccionar origen</option>
+      <option>Córdoba Capital</option>
+      <option>Rosario</option>
+      <option>Retiro</option>
+      <option>Terminal Dellepiane</option>
+      <option>Terminal de Liniers</option>
+    </select>
+    <div class="invalid-feedback">
+      Selecciona un estado válido.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom02" class="form-label fs-3 fw-bold">Destino</label>
+    <select class="form-select" id="validationCustom02" required>
+      <option selected disabled value="">Seleccionar destino</option>
+      <option>Córdoba Capital</option>
+      <option>Rosario</option>
+      <option>Retiro</option>
+      <option>Terminal Dellepiane</option>
+      <option>Terminal de Liniers</option>
+    </select>
+    <div class="invalid-feedback">
+      Selecciona un estado válido.
+    </div>
+  </div>   
+  <div class="col-md-3">
+    <label for="validationCustom03" class="form-label fs-3 fw-bold">Pasajeros</label>
+    <select class="form-select" id="validationCustom03" required>
+      <option selected disabled value="">Cantidad de pasajeros</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+      <option>7</option>
+      <option>8</option>
+    </select>
+    <div class="invalid-feedback">
+      Selecciona un estado válido.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom04" class="form-label fs-3 fw-bold">Fecha</label>
+    <div class="col">
+      <input type="date" class="form-control" placeholder="Nombre" aria-label="Nombre" required>
+    </div>
+    <div class="invalid-feedback">
+      Selecciona un estado válido.
+    </div>
+  </div>
+  <!-- Boton terminos y condiciones-->
+  <div class="col-12 my-4">
+    <button class="btn btn-dark" type="button"
+     data-bs-toggle="offcanvas"
+     data-bs-target="#offcanvasBottom"
+     aria-controls="offcanvasBottom">
+            Termino y condiciones
+          </button>
+  </div>
+
+  <div class="col-12 m-2">
+    <div class="form-check was-validated">
+      <input type="checkbox" class="form-check-input fs-4"  value="" id="invalidCheck" required>
+      <label class="form-check-label fs-4 fw-bold" for="invalidCheck">
+         Acepta los términos y condiciones
+      </label>
+      <div class="invalid-feedback fw-bold">
+        Debe estar de acuerdo antes de realizar la búsqueda.
+      </div>
+    </div>
+  </div>
+  <div class="col-12 text-center">
+    <button class="btn btn-primary fw-bold py-3 ps-5 pe-5 fs-3" type="submit">Buscar</button>
+  </div>
+</form>
+
+</section>
+
     <section class="section container mt-5 p-0 ">     
       <div class="section__bus ">
         <img src="./img/bus.png" alt="bus" class="img-fluid rounded-3" />
       </div>
     </section>
+    <!-- Terminos y condiciones emergente-->
+   <div
+      class="offcanvas offcanvas-bottom container"
+      tabindex="-1"
+      id="offcanvasBottom"
+      aria-labelledby="offcanvasBottomLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title fw-bold fs-4 text-decoration-underline" id="offcanvasBottomLabel">Legales:</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <p class="fs-3">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos iusto labore esse nostrum eligendi illum, impedit, dolorum quam doloribus quae minima corrupti velit facilis veritatis officia aspernatur reprehenderit! Provident qui unde quibusdam vero vel esse, cupiditate quaerat consectetur rem deleniti, eaque asperiores officiis facilis hic iure placeat nam delectus molestias! Illum fugiat quae rerum autem, molestiae iste perferendis sequi error vitae facere maxime deserunt quia neque alias provident nam incidunt inventore deleniti, harum beatae explicabo! Eos explicabo voluptatum excepturi hic. Eaque similique ea sunt beatae quam nihil minus, aspernatur natus rem soluta praesentium aliquid commodi voluptates voluptatem saepe et in, asperiores eveniet cumque voluptate ipsam vero! Nihil alias quam dolore, numquam iste debitis assumenda aliquam minus quo earum, autem veritatis omnis voluptatum tenetur? Aperiam voluptatum mollitia, eligendi tenetur accusantium voluptatibus perspiciatis aliquid aliquam libero soluta dolor unde et delectus officia, expedita laborum eius animi voluptas! Consequatur totam ut voluptas maiores facere harum veritatis eum. Eligendi esse, beatae, fugiat, delectus nobis provident similique hic dignissimos accusantium at magni sunt unde fuga animi. Et accusantium quisquam nostrum nemo cum dolor nobis dolore amet eius excepturi eaque aperiam minus, id architecto consectetur ipsa tempora placeat, nisi voluptatum repudiandae quasi maxime eum eos. Ea laboriosam, nemo nulla dicta necessitatibus eaque ab saepe rem ut vel mollitia voluptas. Illo dolores, laborum aliquid explicabo itaque rerum similique eligendi soluta incidunt fugiat accusamus excepturi necessitatibus voluptatem quo eos adipisci consequatur illum ipsam hic beatae optio ea eaque esse? Quidem incidunt possimus iste accusantium debitis sequi fuga reiciendis. 
+        </p>
+      </div>
+    </div>
 
     <footer class="footer container my-5 rounded-3 d-flex justify-content-center">
-      <div class="footer--box py-3 my-4">
-        
+      <div class="footer--box py-3 my-4">        
         <ul class=" nav justify-content-center pb-3 mb-3">
           <li class="nav-item">
             <a href="https://www.facebook.com/" target="_blank" class="m-3 text-white fs-1"><p class="social-media fa-brands fa-square-facebook"></p></a></a>
