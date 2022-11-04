@@ -1,12 +1,21 @@
+
+// Miscelaneo
 @import "./misc/normalize";
+
+//partials
+
 @import "./partials/header";
-@import "./pages/index";
-@import "./partials/breadcrumbs";
+@import "./partials/footer";
 @import "./partials/separador";
-@import "./pages/contacto";
+
+//pages
+@import "./pages/index";
 @import "./pages/nosotros";
 @import "./pages/servicios";
-@import "./partials/footer";
+@import "./pages/flota";
+@import "./pages/contacto";
+@import "./pages/rrhh";
+
 
 
 
