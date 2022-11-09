@@ -3,14 +3,16 @@
   font-size: 10px; }
 
 body {
+  margin: 0px;
+  padding: 0px;
   font-family: oxygen;
-  background-color: #1a1919;
-  background-image: url("data:image/svg+xml,%3Csvg width='32' height='26' viewBox='0 0 32 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 0v3.994C14 7.864 10.858 11 7 11c-3.866 0-7-3.138-7-7.006V0h2v4.005C2 6.765 4.24 9 7 9c2.756 0 5-2.236 5-4.995V0h2zm0 26v-5.994C14 16.138 10.866 13 7 13c-3.858 0-7 3.137-7 7.006V26h2v-6.005C2 17.235 4.244 15 7 15c2.76 0 5 2.236 5 4.995V26h2zm2-18.994C16 3.136 19.142 0 23 0c3.866 0 7 3.138 7 7.006v9.988C30 20.864 26.858 24 23 24c-3.866 0-7-3.138-7-7.006V7.006zm2-.01C18 4.235 20.244 2 23 2c2.76 0 5 2.236 5 4.995v10.01C28 19.765 25.756 22 23 22c-2.76 0-5-2.236-5-4.995V6.995z' fill='%23212124' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E"); }
+  background: #eeaeca;
+  background: radial-gradient(circle, #eeaeca 0%, #94bbe9 100%); }
 
 /*############ footer ##########*/
 .footer {
   height: 20rem;
-  background-color: rgba(255, 255, 255, 0.1); }
+  background-color: rgba(100, 100, 100, 0.8); }
   .footer .footer--box .nav .nav-item .social-media:hover {
     color: #06adf0; }
 
@@ -40,6 +42,9 @@ body {
 .section__bienvenida:hover {
   box-shadow: 0 2px 30px #06adf0; }
 
+.section-logo .section-logo__box .section-logo-box__contLogo {
+  filter: drop-shadow(0 0.4rem 1rem rgba(0, 0, 1, 0.928)); }
+
 .about {
   margin-top: 5rem; }
   .about .about__nosotros {
@@ -49,7 +54,7 @@ body {
       font-family: oxygen;
       color: #ffffff; }
     .about .about__nosotros .about__nosotros--contenido {
-      background-color: rgba(255, 255, 255, 0.24);
+      background-color: rgba(100, 100, 100, 0.8);
       border-radius: 8px;
       -webkit-transition: 0.5s linear;
       transition: 0.5s linear;
@@ -73,7 +78,7 @@ body {
     font-weight: bold;
     color: #ffffff;
     font-size: 1.5rem;
-    background-color: rgba(255, 255, 255, 0.24);
+    background-color: rgba(100, 100, 100, 0.8);
     border-radius: 8px;
     -webkit-transition: 0.5s linear;
     transition: 0.5s linear;
