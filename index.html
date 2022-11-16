@@ -51,57 +51,37 @@
         </div>
       </nav>
     </header>
-    <section class="section-logo container m">
-      <div class="section-logo__box container d-flex flex-column align-items-center">
+    <main>
+    <section class="section-logo  container-fluid p-0">
+      <div class="section-logo__box container-fluid p-0 d-flex flex-column align-items-center">
         <div class="section-logo-box__contLogo ">
           <img src="./img/logo_norteno.png" alt="logo" class=" img-fluid" />
         </div>
-        <div class="section__bienvenida badge bg-dark bg-opacity-75 text-wrap p-5 mb-5 rounded-3" >
-          <h1 class="fs-1">¡Bienvenidos a nuestro sitio web!</h1>
+        <div class="section__bienvenida container-md badge  bg-opacity-75 text-wrap py-5 mb-5 rounded-3" >
+          <h1 class="titulo fw-bold ">¡Bienvenidos!</h1>
         </div>
       </div>
     </section>    
-    <!-- Carousel -->
-
-    <section class="container p-0">
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        
+  <section class="section-img-compra container-fluid p-0 ">
+    <div class="section-img-compra__caja-texto position-relative text-center fs-1" >
+      <div class="position-absolute bottom-0 container-fluid bg-gradient ">
+        <h2 class=" fs-1 text-light text-">HACE TU COMPRA ONLINE </h2>
+        <h3 class="fs-1 text-light">Y ACCEDÉ A DESCUENTOS EXCLUSIVOS</h3>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./img/slide1.jpg" class="d-block w-100" alt="ELNorteno">
-          <div class="carousel-caption d-none d-md-block">
-            <h2 class="fw-bold fs-1 text-decoration-underline text-info">HACE TU COMPRA ONLINE</h2>
-            <p class="fw-bold fs-3 text-black">Y ACCEDÉ A DESCUENTOS EXCLUSIVOS.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./img/slide2.jpg" class="d-block w-100" alt="promocion">
-          
-        </div>
-        <div class="carousel-item">
-          <img src="./img/slide3.jpg" class="d-block w-100" alt="ofertas">          
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Siguiente</span>
-      </button>
+      <img src="./img/compraOnline.jpg" class="img-fluid" alt="compra">
     </div>
-    <hr class="contact__separador"> 
+
+    
   </section>
 
 <!--########## FORMULARIO COMPRA ONLINE ###########-->
-<section class="container bg-secondary bg-gradient  rounded-3 p-4">
-  <h2 class="fs-1 text-center fw-bold mb-5 ">Comprá Online</h2>
-<form class="row g-4 needs-validation" validate>
+<section class="section-compraOnline container-fluid bg-gradient p-0 m-0 shadow-lg">
+   <hr class="contact__separador"> 
+  <div class="section-compraOnline__cajaPrincipal sep-4">
+   
+  <h2 class="fs-1 text-center fw-bold my-5 ">Comprá Online</h2>
+<form class="row g-3 needs-validation p-4 m-0" validate>
   <div class="col-md-3 ">
     <label for="validationCustom01" class="form-label fs-3 fw-bold">Origen</label>
     <select class="form-select was-validated " id="validationCustom01" required>
@@ -173,21 +153,50 @@
     <button class="btn btn-primary fw-bold py-3 ps-5 pe-5 fs-3" type="submit">Buscar</button>
   </div>
 </form>
-
+</div>
 </section>
 
-    <section class="section container mt-5 p-0 ">     
-      <div class="section__bus ">
-        <img src="./img/bus.png" alt="bus" class="img-fluid rounded-3" />
-      </div>
-      <hr class="contact__separador">
-    </section>
+    <!-- Carousel -->
 
+    <section class="container-xxl  p-0 my-5 shadow-lg">
+      <div id="carouselPortada" class="carousel slide rounded-3" data-bs-ride="carousel">
+        <div class="carousel-indicators ">
+          <button type="button" data-bs-target="#carouselPortada" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselPortada" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselPortada" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/slide1.jpg" class="d-block w-100 rounded-3 " alt="ELNorteno">
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="fw-bold fs-1 text-decoration-underline text-info">HACE TU COMPRA ONLINE</h2>
+              <p class="fw-bold fs-3 text-black">Y ACCEDÉ A DESCUENTOS EXCLUSIVOS.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/slide2.jpg" class="d-block w-100 rounded-3" alt="promocion">
+            
+          </div>
+          <div class="carousel-item">
+            <img src="./img/slide3.jpg" class="d-block w-100 rounded-3" alt="ofertas">          
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPortada" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselPortada" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+      
+    </section>
+  
 
     <!-- Newsletter-->
 
-
-    <section class="container rounded-3 p-5 bg-secondary bg-gradient">
+    <section class="container rounded-3 p-5 bg-danger bg-opacity-25 shadow-lg">
       
       <div class="row ">
         <div class="col">
@@ -208,7 +217,6 @@
       </form>    
     </div>
     </section>
-
 
     <!-- Terminos y condiciones emergente-->
    <div
@@ -232,8 +240,8 @@
         </p>
       </div>
     </div>
-
-    <footer class="footer container my-5 rounded-3 d-flex justify-content-center">
+  </main>
+    <footer class="footer container-fluid my-5 rounded-3 d-flex justify-content-center">
       <div class="footer--box py-3 my-4">        
         <ul class=" nav justify-content-center pb-3 mb-3">
           <li class="nav-item">

@@ -19,7 +19,7 @@
     <title>Contacto</title>
 </head>
 <body>    
-    <header class="header container "> 
+    <header class="header container-fluid p-0 "> 
         <nav class="barra navbar navbar-expand-lg border-bottom border-5 border-info py-4 navbar-dark bg-dark bg-opacity-75 rounded-3 p-2">
           <div class="container-fluid">
             <a class="navbar-brand fs4 " href="../index.html">
@@ -56,7 +56,6 @@
           </div>
         </nav>
       </header>
-
       <section class="container">
     <div class="contact row justify-content-center ">
         <hr class="contact__separador">        
@@ -64,7 +63,7 @@
             <img src="../img/logo.png" alt="">
         </div>
         <div class="contact__box  container">
-            <div class="contact__box--titulo_texto">
+            <div class="contact__box--titulo_texto text-black">
                 <div>
                     <p>Contacto</p>
                 </div>
@@ -76,20 +75,20 @@
                     </div>
                 </div>
                 <form class="formulario row justify-content-center" method="POST" action="">    
-                    <input class="campos" id="idnombre" type="text" placeholder="Nombre*" minlength="4" maxlength="60" name="nombre" required >
+                    <input class="campos fs-3" id="idnombre" type="text" placeholder="Nombre*" minlength="4" maxlength="60" name="nombre" required >
                     <hr class="separador_2">
-                    <input class="campos" id="idemail" type="email" name="email" placeholder="Email*" minlength="4" maxlength="40" required >
+                    <input class="campos fs-3" id="idemail" type="email" name="email" placeholder="Email*" minlength="4" maxlength="40" required >
                     <hr class="separador_2">
-                    <textarea class="area_texto" id="idconsulta" name="consulta" placeholder="Mensaje*" rows="8" cols="50" minlength="50"> </textarea>
+                    <textarea class="area_texto fs-3" id="idconsulta" name="consulta" placeholder="Mensaje*" rows="8" cols="50" minlength="50"> </textarea>
                     <hr class="separador_2">
-                    <input class="enviar" id="idenviar" type="button" value="Enviar mensaje">
+                    <input class="enviar fs-4" id="idenviar" type="button" value="Enviar mensaje">
                     </form>                    
           </div>
         </div>
       </div>
     </section>
-    <section>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13115.443915003994!2d-58.405933801225494!3d-34.73389845539155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd7083e522f3%3A0xb69eeab24c9a6d6c!2sCONFITERIA!5e0!3m2!1ses!2sar!4v1661324753008!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="section__iframe"></iframe>
+    <section class="container text-center shadow-lg p-0 rounded-3">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.1142019825597!2d-64.17132768466662!3d-31.410979481405903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2a05a94c69f%3A0xa4e93040b467058e!2sEl%20Norte%C3%B1o!5e0!3m2!1ses-419!2sar!4v1668573811263!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
         <footer class="footer container my-5 rounded-3 d-flex justify-content-center">
           <div class="footer--box py-3 my-4">            

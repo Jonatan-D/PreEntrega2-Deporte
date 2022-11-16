@@ -6,8 +6,11 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: oxygen;
-  background: #eeaeca;
-  background: radial-gradient(circle, #eeaeca 0%, #94bbe9 100%); }
+  background-image: url(/img/fondo.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
 
 /*############ footer ##########*/
 .footer {
@@ -35,15 +38,33 @@ body {
   opacity: 1;
   margin: 12px 0px; }
 
-.section__bienvenida {
-  -webkit-transition: 0.5s linear;
-  transition: 0.5s linear; }
-
-.section__bienvenida:hover {
-  box-shadow: 0 2px 30px #06adf0; }
-
 .section-logo .section-logo__box .section-logo-box__contLogo {
   filter: drop-shadow(0 0.4rem 1rem rgba(0, 0, 1, 0.928)); }
+
+.section-logo .section__bienvenida .titulo {
+  font-size: 4rem;
+  color: black;
+  -webkit-animation: texto-borroso-fadein 5s cubic-bezier(0.55, 0.085, 0.68, 0.53) alternate-reverse both;
+  animation: texto-borroso-fadein 5s cubic-bezier(0.55, 0.085, 0.68, 0.53) alternate-reverse both; }
+
+@-webkit-keyframes texto-borroso-fadein {
+  0% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01); }
+  100% {
+    -webkit-filter: blur(12px) opacity(0%);
+    filter: blur(12px) opacity(0%); } }
+
+@keyframes texto-borroso-fadein {
+  0% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01); }
+  100% {
+    -webkit-filter: blur(12px) opacity(0%);
+    filter: blur(12px) opacity(0%); } }
+
+.section-compraOnline .section-compraOnline__cajaPrincipal {
+  background-color: rgba(213, 225, 224, 0.9); }
 
 .about {
   margin-top: 5rem; }
@@ -116,7 +137,7 @@ body {
   .contact .contact__box ::selection {
     text-shadow: 0 2px 12px #06adf0; }
   .contact .contact__box .contact__box--contenedor-formu {
-    background-color: rgba(255, 255, 255, 0.24);
+    background-color: rgba(100, 100, 100, 0.8);
     border-radius: 8px;
     -webkit-transition: 0.5s linear;
     transition: 0.5s linear;
@@ -124,8 +145,8 @@ body {
     .contact .contact__box .contact__box--contenedor-formu:hover {
       box-shadow: 0 2px 30px #06adf0; }
     .contact .contact__box .contact__box--contenedor-formu .formulario {
-      margin: 30px 0;
-      padding: 20px; }
+      margin: 1rem 0;
+      padding: 1rem; }
       .contact .contact__box .contact__box--contenedor-formu .formulario .campos {
         border-radius: 8px;
         background: none;
@@ -168,7 +189,7 @@ body {
     font-weight: bold;
     color: #ffffff;
     font-size: 1.5rem;
-    background-color: rgba(255, 255, 255, 0.24);
+    background-color: rgba(100, 100, 100, 0.8);
     border-radius: 8px;
     -webkit-transition: 0.5s linear;
     transition: 0.5s linear;
