@@ -1,49 +1,44 @@
 .section-logo {
-  .section-logo__box {
-    .section-logo-box__contLogo {
-      filter: drop-shadow(0 0.4rem 1rem rgba(0, 0, 1, 0.928));
-    }
-  }
-  & .section__bienvenida {
-    .titulo {
-      font-size: 4rem;
-      color: black;
+	.section-logo__box {
+		.section-logo-box__contLogo {
+			filter: drop-shadow(0 0.4rem 1rem rgba(0, 0, 1, 0.928));
+		}
+	}
+	& .section__bienvenida {
+		.titulo {
+			font-size: 4rem;
+			color: black;
 
-      -webkit-animation: texto-borroso-fadein 5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
-        alternate-reverse both;
-      animation: texto-borroso-fadein 5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
-        alternate-reverse both;
+			-webkit-animation: texto-borroso-fadein 5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+				alternate-reverse both;
+			animation: texto-borroso-fadein 5s cubic-bezier(0.55, 0.085, 0.68, 0.53) alternate-reverse both;
 
-      @-webkit-keyframes texto-borroso-fadein {
-        0% {
-          -webkit-filter: blur(0.01);
-          filter: blur(0.01);
-        }
-        100% {
-          -webkit-filter: blur(12px) opacity(0%);
-          filter: blur(12px) opacity(0%);
-        }
-      }
-      @keyframes texto-borroso-fadein {
-        0% {
-          -webkit-filter: blur(0.01);
-          filter: blur(0.01);
-          
-        }
-        100% {
-          -webkit-filter: blur(12px) opacity(0%);
-          filter: blur(12px) opacity(0%);
-          
-        }
-      }
-    }
-  }
+			@-webkit-keyframes texto-borroso-fadein {
+				0% {
+					-webkit-filter: blur(0.01);
+					filter: blur(0.01);
+				}
+				100% {
+					-webkit-filter: blur(12px) opacity(0%);
+					filter: blur(12px) opacity(0%);
+				}
+			}
+			@keyframes texto-borroso-fadein {
+				0% {
+					-webkit-filter: blur(0.01);
+					filter: blur(0.01);
+				}
+				100% {
+					-webkit-filter: blur(12px) opacity(0%);
+					filter: blur(12px) opacity(0%);
+				}
+			}
+		}
+	}
 }
 
-.section-compraOnline{
-  .section-compraOnline__cajaPrincipal{
-    background-color: rgba(213, 225, 224, 0.900);
-  }  
+.section-compraOnline {
+	.section-compraOnline__cajaPrincipal {
+		background-color: rgba(213, 225, 224, 0.9);
+	}
 }
-
-

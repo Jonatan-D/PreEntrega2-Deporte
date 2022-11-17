@@ -1,24 +1,24 @@
 .servicios__container {
-  height: auto;
-  box-sizing: border-box;
-  & h1 {
-    font-family: oxygen;
-    color: #ffffff;
-  }
-  .servicios__container--contenido {
-    font-family: Oxygen;
-    font-weight: bold;
-    color: #ffffff;
-    font-size: 1.5rem;
-    background-color: rgba(100, 100, 100, 0.800);
-    border-radius: 8px;
-    -webkit-transition: 0.5s linear;
-    transition: 0.5s linear;
-    padding: 0.5rem;
-    box-sizing: border-box;
+	height: auto;
+	box-sizing: border-box;
+	& h1 {
+		font-family: oxygen;
+		color: #ffffff;
+	}
+	.servicios__container--contenido {
+		font-family: Oxygen;
+		font-weight: bold;
+		color: #ffffff;
+		font-size: 1.5rem;
+		background-color: rgba(100, 100, 100, 0.8);
+		border-radius: 8px;
+		-webkit-transition: 0.5s linear;
+		transition: 0.5s linear;
+		padding: 0.5rem;
+		box-sizing: border-box;
 
-    &:hover {
-      box-shadow: 0 2px 30px #06adf0;
-    }
-  }
+		&:hover {
+			box-shadow: 0 2px 30px #06adf0;
+		}
+	}
 }
